@@ -107,7 +107,7 @@ private:
 int main()
 {
 	MyString string1("Hallo");
-	MyString string2("World");
+	MyString string2("World!");
 	MyString Str;
 	Str = string1 + string2;
 	std::cout << Str << std::endl;
