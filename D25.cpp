@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <vector>
 #include <string>
 
 class MyString
@@ -22,7 +23,6 @@ public:
 
 		this->string[length] = '\0';
 	}
-
 
 	~MyString()
 	{
@@ -95,10 +95,21 @@ public:
 		 return newStr;
 	};
 
+	 char operator[](const int i)
+	 {
+		 return string[i];
+	 }
+
+	 int size()
+	 {
+		 return length;
+	 }
+
 private:
 
 	char* string;
 	int length;
+	
 
 };
 
@@ -106,13 +117,98 @@ private:
 
 int main()
 {
-	MyString string1("Hallo");
+	/*MyString string1("Hallo");
 	MyString string2("World!");
 	MyString Str;
 	Str = string1 + string2;
-	std::cout << Str << std::endl;
+	std::cout << Str << std::endl;*/
 
+	setlocale(LC_ALL, "ru");
+
+	MyString a1 = "Привет";
+	MyString a2 = "маленький";
+	MyString a3 = "черный";
+	MyString a4 = "мальчик";
+	std::vector<MyString> vec = { a1,a2,a3,a4 };
 	
+	MyString b1 = "Я";
+	MyString b2 = "подарю";
+	MyString b3 = "тебе";
+	MyString b4 = "банан";
+	std::vector<MyString> vec1 = { b1,b2,b3,b4 };
 
+	MyString c1 = "Ты";
+	MyString c2 = "будешь";
+	MyString c3 = "моим";
+	MyString c4 = "рабом";
+	std::vector<MyString> vec2 = { c1,c2,c3,c4 };
+
+	MyString d1 = "Теперь";
+	MyString d2 = "ты";
+	MyString d3 = "рыжа";
+	MyString d4 = "маупа";
+	std::vector<MyString> vec3 = { d1,d2,d3,d4 };
+
+	/*for (int i = 0; i < vec.size(); i++)
+	{
+		std::cout << vec[i] << " ";
+	}
+	std::cout << '\n';
+	for (int i = 0; i < vec1.size(); i++)
+	{
+		std::cout << vec1[i] << " ";
+	}
+	std::cout << '\n';
+	for (int i = 0; i < vec2.size(); i++)
+	{
+		std::cout << vec2[i] << " ";
+	}
+	std::cout << '\n';
+	for (int i = 0; i < vec3.size(); i++)
+	{
+		std::cout << vec3[i] << " ";
+	}
+	std::cout << '\n';*/
+	
+	if(vec[vec.size()-1].size()>5)
+	{
+		std::cout << vec[vec.size()-1] << '\n';
+	}
+	else
+	{
+		std::cout<<"Empty"<<'\n';
+	}
+
+
+	if (vec1[vec1.size() - 1].size() > 5)
+	{
+		std::cout << vec1[vec1.size() - 1] << '\n';
+	}
+	else
+	{
+		std::cout << "Empty" << '\n';
+	}
+
+
+	if (vec2[vec2.size() - 1].size() > 5)
+	{
+		std::cout << vec2[vec2.size() - 1] << '\n';
+	}
+	else
+	{
+		std::cout << "Empty" << '\n';
+	}
+
+
+	if (vec3[vec3.size() - 1].size() > 5)
+	{
+		std::cout << vec3[vec3.size() - 1] << '\n';
+	}
+	else
+	{
+		std::cout << "Empty" << '\n';
+	}
+
+	return 0;
 }
 
