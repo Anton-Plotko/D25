@@ -125,28 +125,28 @@ int main()
 
 	setlocale(LC_ALL, "ru");
 
-	MyString a1 = "Привет";
-	MyString a2 = "маленький";
-	MyString a3 = "черный";
-	MyString a4 = "мальчик";
+	MyString a1 = "Сегодня";
+	MyString a2 = "смотрел";
+	MyString a3 = "интересный";
+	MyString a4 = "фильм";
 	std::vector<MyString> vec = { a1,a2,a3,a4 };
 	
-	MyString b1 = "Я";
-	MyString b2 = "подарю";
-	MyString b3 = "тебе";
-	MyString b4 = "банан";
+	MyString b1 = "Завтра";
+	MyString b2 = "пойду";
+	MyString b3 = "в";
+	MyString b4 = "спортзал";
 	std::vector<MyString> vec1 = { b1,b2,b3,b4 };
 
-	MyString c1 = "Ты";
-	MyString c2 = "будешь";
-	MyString c3 = "моим";
-	MyString c4 = "рабом";
+	MyString c1 = "Вчера";
+	MyString c2 = "ел";
+	MyString c3 = "вкусную";
+	MyString c4 = "пиццу";
 	std::vector<MyString> vec2 = { c1,c2,c3,c4 };
 
-	MyString d1 = "Теперь";
-	MyString d2 = "ты";
-	MyString d3 = "рыжа";
-	MyString d4 = "маупа";
+	MyString d1 = "После";
+	MyString d2 = "завтра";
+	MyString d3 = "уеду";
+	MyString d4 = "путешествовать";
 	std::vector<MyString> vec3 = { d1,d2,d3,d4 };
 
 	/*for (int i = 0; i < vec.size(); i++)
